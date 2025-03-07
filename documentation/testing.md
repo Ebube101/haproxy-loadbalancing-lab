@@ -88,7 +88,7 @@ ab -n 1000 -c 50 http://<haproxy-server-ip>/
 ### **Expected Result:**  
 - The stats page should show active connections, backend health, and request distribution.  
 
-📸 **Screenshot:** `documentation/screenshots/haproxy-stats-page.png`  
+📸 **Screenshot:** ![haproxy-stats](https://github.com/Ebube101/haproxy-loadbalancing-lab/blob/main/documentation/screenshots/haproxy-stats.png)
 
 ---
 
