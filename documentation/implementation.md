@@ -143,7 +143,7 @@ listen stats
 ```
 http://server-ip:8080/stats
 ```
-📸 **Screenshot:** _HAProxy stats dashboard_  
+📸 **Screenshot:** ![haproxy-stats](https://github.com/Ebube101/haproxy-loadbalancing-lab/blob/main/documentation/screenshots/haproxy-stats.png?raw=true) 
 🔹 **File location:** `documentation/screenshots/haproxy-stats.png`  
 
 ---
