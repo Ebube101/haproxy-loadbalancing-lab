@@ -19,7 +19,7 @@ curl -I http://<haproxy-server-ip>
 - Response headers should indicate a valid HTTP response (`200 OK`).  
 - Requests should alternate between backend servers (`web1` and `web2`).  
 
-📸 **Screenshot:** `documentation/screenshots/basic-connectivity-test.png`  
+📸 **Screenshot:** ![basic-connectivity-test](https://github.com/Ebube101/haproxy-loadbalancing-lab/blob/main/documentation/screenshots/basic-connectivity-test.png?raw=true) 
 
 ---
 
@@ -47,8 +47,6 @@ sudo systemctl status haproxy
 ### **Expected Result:**  
 - HAProxy should report both backend servers as **UP**.  
 
-📸 **Screenshot:** `documentation/screenshots/health-check-test.png`  
-
 ---
 
 ## **4️⃣ HAProxy Logs Verification**  
@@ -60,8 +58,6 @@ sudo journalctl -u haproxy --no-pager | tail -n 20
 
 ### **Expected Result:**  
 - Logs should show successful connections and health check results.  
-
-📸 **Screenshot:** `documentation/screenshots/haproxy-logs-test.png`  
 
 ---
 
