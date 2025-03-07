@@ -33,7 +33,7 @@ for i in {1..10}; do curl -s http://<haproxy-server-ip> | grep "Server"; done
 ### **Expected Result:**  
 - Requests should distribute evenly between `web1` and `web2` (round-robin).  
 
-📸 **Screenshot:** `documentation/screenshots/load-balancing-test.png`  
+📸 **Screenshot:** ![load-balancing-test](https://github.com/Ebube101/haproxy-loadbalancing-lab/blob/main/documentation/screenshots/load-balancing-test.png?raw=true)  
 
 ---
 
