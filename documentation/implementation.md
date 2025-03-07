@@ -37,9 +37,6 @@ Run the following commands on the HAProxy server:
 sudo apt update
 sudo apt install -y haproxy
 ```
-📸 **Screenshot:** _Command execution output_  
-🔹 **File location:** `documentation/screenshots/haproxy-installation.png`  
-
 ---
 
 ### **Step 2: Configure HAProxy (`haproxy.cfg`)**  
@@ -76,10 +73,7 @@ backend http_back
 📌 **Configuration Breakdown:**  
 - **Frontend (`http_front`)**: Listens for incoming requests on port **80**  
 - **Backend (`http_back`)**: Uses a **round-robin** algorithm to distribute traffic  
-- **Health checks (`check`)**: Ensures backend servers are responsive  
-
-📸 **Screenshot:** _Configuration file in HAProxy_  
-🔹 **File location:** `documentation/screenshots/haproxy-config.png`  
+- **Health checks (`check`)**: Ensures backend servers are responsive    
 
 ---
 
@@ -88,7 +82,7 @@ backend http_back
 sudo systemctl enable --now haproxy
 sudo systemctl status haproxy
 ```
-📸 **Screenshot:** _HAProxy service running_  
+📸 **Screenshot:**  ![haproxy-status](https://github.com/Ebube101/haproxy-loadbalancing-lab/blob/main/documentation/screenshots/haproxy-status.png?raw=true)
 🔹 **File location:** `documentation/screenshots/haproxy-status.png`  
 
 ---
@@ -101,9 +95,6 @@ sudo systemctl status haproxy
 📌 Alternative options:  
 - **Least Connection**: Sends requests to the server with the fewest active connections.  
 - **Source Hashing**: Directs requests from the same client IP to the same backend.  
-
-📸 **Screenshot:** _Example output from `curl` requests showing alternating responses from backend servers._  
-🔹 **File location:** `documentation/screenshots/load-balancing-test.png`  
 
 ---
 
