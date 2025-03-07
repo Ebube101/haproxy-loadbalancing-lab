@@ -73,7 +73,7 @@ ab -n 1000 -c 50 http://<haproxy-server-ip>/
 - HAProxy should efficiently distribute load without errors.  
 - Average response time should be within acceptable limits.  
 
-📸 **Screenshot:** `documentation/screenshots/performance-test.png`  
+📸 **Screenshot:** ![perfomance-test](https://github.com/Ebube101/haproxy-loadbalancing-lab/blob/main/documentation/screenshots/performance-test.png)
 
 ---
 
@@ -106,8 +106,6 @@ ab -n 1000 -c 50 http://<haproxy-server-ip>/
 
 ### **Expected Result:**  
 - HAProxy should detect `web1` as DOWN and route all traffic to `web2`.  
-
-📸 **Screenshot:** `documentation/screenshots/failover-test.png`  
 
 ---
 
